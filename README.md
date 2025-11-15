@@ -38,3 +38,5 @@ Exemple pour Word + Excel + PowerPoint :
 Office sera installé sur votre ordinateur.
 
 ## Important
+- Avant d’installer, supprimez toutes les anciennes versions d’Office de votre ordinateur pour éviter les conflits et redémarrez votre PC.
+
