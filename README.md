@@ -14,12 +14,12 @@ Repo original : [GitHub - Install-Office](https://github.com/farag2/Install-Offi
 
 ## 3. Autoriser l'exécution du script
 ```powershell
-Set-ExecutionPolicy Bypass -Force
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Force
 ```
 
 ## 4. Aller dans le dossier du projet
 ```powershell
-cd CHEMIN_DU_DOSSIER
+cd C:\Users\HP\Desktop\Install-Office-master      
 ```
 *(Astuce : glisser le dossier dans la fenêtre PowerShell)*
 
@@ -48,22 +48,6 @@ Office sera installé sur votre ordinateur.
 PowerShell fonctionne correctement, **mais il peut refuser cette commande** à cause d’une stratégie de sécurité Windows.
 
 ### ✅ Solution simple
-1. Ouvrez PowerShell **en administrateur**.
-2. Affichez les stratégies actives :
-   ```powershell
-   Get-ExecutionPolicy -List
-   ```
-3. Si *MachinePolicy* ou *UserPolicy* affiche `RemoteSigned` ou `AllSigned`, cela bloque la commande.
-4. Utilisez cette commande alternative :
-   ```powershell
-   powershell -ExecutionPolicy Bypass
-   ```
-   → Une nouvelle fenêtre PowerShell s’ouvre avec les permissions nécessaires.
-5. Dans cette nouvelle fenêtre, exécutez :
-   ```powershell
-   .\Download.ps1
-   ```
-
 ### 📌 Exemple de commande complète si PowerShell ne fonctionne pas
 Si PowerShell refuse d’exécuter le script, utilisez directement cette commande :
 ```powershell
@@ -103,3 +87,10 @@ Remplissez comme ceci :
 - `Components[1]:` → `Excel`
 - `Components[2]:` → `PowerPoint`
 - `Components[3]:` → (appuyez juste sur Entrée)
+
+
+---
+
+## Auteur
+Créé par **Ayoub Aguezar**
+
